@@ -6,98 +6,89 @@
 }
 
 body {
-  font-family: Georgia, serif;
-  background-color: #f5f5f0;
-  color: #2c2c2c;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #1F1F1F;
+  color: white;
   min-height: 100vh;
-
-  /* Stack and center all top-level children */
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 2rem 1rem;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* === Heading === */
 .heading {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   text-align: center;
 }
 
-.heading h1 {
-  font-size: 2rem;
-  letter-spacing: 0.02em;
-}
-
 .app-icon {
-  width: 64px;
-  height: 64px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
 }
 
 /* === Additional Info === */
 .additional-info {
   width: 100%;
-  max-width: 480px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .additional-info section {
   text-align: center;
 }
 
-.additional-info h2 {
-  font-size: 1.15rem;
-  margin-bottom: 0.4rem;
-}
-
 .additional-info p1 {
   display: block;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
+  font-size: 1rem;
+  line-height: 1.15;
+  color: white;
 }
 
 .additional-info a {
-  color: #1a6fb5;
-  text-decoration: underline;
+  color: #008cff;
 }
 
 .additional-info ol {
   display: inline-block;
   text-align: left;
   padding-left: 1.25rem;
-  font-size: 0.95rem;
-  line-height: 1.9;
-  color: #444;
+  font-size: 1rem;
+  line-height: 1.15;
+  color: white;
 }
 
 /* === Form === */
 form {
   width: 100%;
-  max-width: 480px;
+  max-width: 1000px;
 }
 
 .input-form {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* centers children horizontally */
-  gap: 0.6rem;
+
+  /* centers children horizontally */
+  align-items: center;
+
+  gap: 0.5rem;
   width: 100%;
 }
 
 .input-form label {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: bold;
-  align-self: flex-start;         /* left-align labels */
-  margin-left: calc(50% - 180px); /* align with inputs */
+
+  /* left-align labels */
+  align-self: flex-start;
+
+  /* align with inputs */
+  margin-left: calc(50% - 180px);
 }
 
 .input-form input[type="text"],
@@ -108,7 +99,6 @@ form {
   font-size: 1rem;
   border: 1px solid #bbb;
   border-radius: 4px;
-  background: #fff;
 }
 
 /* Center the submit button */
@@ -116,8 +106,6 @@ form {
   margin-top: 1rem;
   padding: 0.6rem 2rem;
   font-size: 1rem;
-  background-color: #2c2c2c;
-  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -135,7 +123,8 @@ form {
   }
 
   .input-form label {
-    align-self: center;     /* fully center labels on small screens */
+    /* fully center labels on small screens */
+    align-self: center;
     margin-left: 0;
     width: 100%;
     text-align: left;
@@ -144,6 +133,7 @@ form {
 
   .input-form input[type="text"],
   .input-form select {
-    max-width: 100%;        /* full width on mobile */
+    /* full width on mobile */
+    max-width: 100%;
   }
 }
