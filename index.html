@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurrencyConverter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="heading">
+      <h1>Currency Converter</h1>
+      <img class="app-icon" src="CurrencyConverterIcon.png">
+    </div>
+    <div class="additional-info">
+      <section>
+        <h2>About:</h2>
+        <p1>This web application uses <a href="https://fxratesapi.com/">FXRatesAPI</a> to access live exchange rates.</p1>
+        <br>
+        <p1>The API provides exchange rates for all major currencies as well as cryptocurrencies,</p1>
+        <p1>and it is updated every minute to ensure real-time accuracy.</p1>
+      </section>
+      <section>
+        <h2>How to use it:</h2>
+        <ol>
+          <li>Enter the amount of money to be converted.</li>
+          <li>Select the country that you want to convert the amount from.</li>
+          <li>Select the country that you want to convert the amount to.</li>
+        </ol>
+      </section>
+    </div>
+    <form>
+      <div class="input-form">
+        <label>Amount:</label>
+        <input type="text" name="amount" id="amount-select" required>
+        <br>
+        <label>Convert From:</label>
+        <select name="from" id="convert-from-select" required>
+          <option value="">Select a country</option>
+        </select>
+        <br>
+        <label>Convert To:</label>
+        <select name="to" id="convert-to-select" required>
+          <option value="">Select a country</option>
+        </select>
+        <br>
+        <input type="submit">
+      </div>
+    </form>
+</body>
+</html>

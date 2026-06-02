@@ -1,0 +1,17 @@
+.heading {
+    display: flex;
+}
+.app-icon {
+    width: 75px;
+}
+
+body {
+    align-items: center;
+    background-color: #1F1F1F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: large;
+    justify-content: center;
+}
