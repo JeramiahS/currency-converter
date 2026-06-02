@@ -7,7 +7,7 @@
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #1F1F1F;
+  background-color: #16161D;
   color: white;
   min-height: 100vh;
   display: flex;
@@ -92,7 +92,7 @@ form {
   margin-left: calc(50% - 180px);
 }
 
-.input-form input[type="text"],
+.input-form input[type="number"],
 .input-form select {
   width: 100%;
   max-width: 360px;
@@ -132,7 +132,7 @@ form {
     padding-left: 0.25rem;
   }
 
-  .input-form input[type="text"],
+  .input-form input[type="number"],
   .input-form select {
     /* full width on mobile */
     max-width: 100%;
