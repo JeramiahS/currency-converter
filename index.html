@@ -4,44 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CurrencyConverter</title>
-  <link rel="stylesheet" href="index2.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="fetch-currencies.js"></script>
 </head>
 <body>
-    <div class="heading">
+    <div class="title">
       <h1>Currency Converter</h1>
       <img class="app-icon" src="CurrencyConverterIcon.png">
     </div>
-    <div class="additional-info">
-      <section>
-        <h2>About:</h2>
-        <p1>Exchange between 175+ currencies (including cryptocurrencies) with real-time exchange rates</p1>
-      </section>
-      <section>
-        <h2>How to use it:</h2>
-        <ol>
-          <li>Enter the amount of money to be converted.</li>
-          <li>Select the country that you want to convert the amount from.</li>
-          <li>Select the country that you want to convert the amount to.</li>
-        </ol>
-      </section>
-    </div>
     <form>
       <div class="input-form">
-        <label>Amount:</label>
-        <input type="number" name="amount" id="amount-select" required>
+        <label for="amount-input">Amount:</label>
+        <input type="number" name="amount" id="amount-input" required>
         <br>
-        <label>Convert From:</label>
-        <select name="from" id="convert-from-select" required>
-          <option value="">Select a country</option>
+        <label for="select-from-menu">Convert From:</label>
+        <select name="from" id="select-from-menu" required>
+          <option value="">Select a currency</option>
         </select>
         <br>
-        <label>Convert To:</label>
-        <select name="to" id="convert-to-select" required>
-          <option value="">Select a country</option>
+        <label for="select-to-menu">Convert To:</label>
+        <select name="to" id="select-to-menu" required>
+          <option value="">Select a currency</option>
         </select>
         <br>
-        <input type="submit">
+        <button type="button" class="form-button" id="convert-button">Convert</button>
+        <script src="fetch-converison-result.js"></script>
       </div>
     </form>
+    <div id="result-display-area" hidden>
+      <p class="result-text">Conversion result will be here</p>
+    </div>
+    <footer>
+      <p>&copy; 2026 Jeramiah Sanchez. All rights reserved.</p>
+    </footer>
 </body>
 </html>
